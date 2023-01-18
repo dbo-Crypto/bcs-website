@@ -1,0 +1,221 @@
+/* Common style */
+#header {
+    background-color: #0E2CA9;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#title {
+    color: white;
+    font-size: 2.5rem;
+    margin: auto;
+    text-align: center;
+}
+
+#logo {
+    width: 10rem;
+}
+
+.col-6 {
+    margin: auto;
+}
+
+#header-center {
+    margin: auto;
+}
+#header-right{
+    display: flex;
+}
+.header-logo-cont{
+    margin: auto;
+}
+.navbar-nav {
+    margin: auto;
+    font-size: 1.3rem;
+}
+.navbar-cont{
+    background-color: #EDEFF1;
+    margin-bottom: 2rem;
+}
+
+.nav-item {
+    margin-right: 3rem;
+}
+
+.nav-item:hover {
+    margin-right: 3rem;
+    background-color: rgb(183, 183, 183);
+}
+
+/* General body style */
+body {
+    width: 90%;
+    margin: auto;
+    border-style: solid;
+    border-color: rgb(229, 224, 224);
+}
+#footer{
+    display: flex;
+    padding: 1rem;
+    background-color: #D9DBDD;
+}
+.footer{
+    margin-top: 2rem;
+}
+.footer-img-cont{
+    display: flex;
+    margin: auto;
+} 
+    /* Index page style */
+
+.index-cont{
+    display: flex;
+    margin-top: 2rem;
+}
+#index-carousel{
+    width: 50%;
+    margin-right: 1rem;
+}
+.index-text-cont{
+    width:50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
+}
+
+/* Equipe page style */
+#equipes-accordion{
+    width: 80%;
+    margin: auto;
+    border-style: ridge;
+}
+.accordion-button{
+    font-size: 1.5rem;
+}
+.accordion-body{
+    display: flex;
+    margin-right: 1rem;
+}
+.equipe-accordion-img-cont{
+
+}
+.equipe-accordion-text-cont{
+    text-align: justify;
+    margin-left: 1rem;
+}
+/* Contact page style */
+.contact-form {
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-style: ridge;
+    padding: 1.5rem;
+    border-color: rgb(235, 236, 236);
+}
+
+.input-group {
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    margin-top: 1rem;
+}
+
+.container-histoire {
+    margin: auto;
+    display: block;
+    width: 70%;
+}
+
+.histoire-p {
+    text-align: justify;
+    font-size: 2vh;
+}
+
+.histoire-h {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 4vh;
+}
+
+.card {
+    width: 18rem;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#encadrants {
+    text-align: center;
+}
+
+.telecharger {
+    size-adjust: 3rem;
+    margin: auto;
+}
+
+.telecharger-elem {
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+.img-telecharger {
+    margin-right: 2rem;
+}
+
+.calendrier-row {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    margin: 2rem;
+    width: 40%;
+}
+
+#score {
+    display: inline-flex;
+}
+
+.team-name {
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+#calendrier {
+    width: 100%;
+}
+
+.score {
+    margin: auto;
+}
+
+.calendar {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.score-card {
+    margin-top: 2rem;
+    border-style: ridge;
+    display: flex;
+}
+
+#score {
+    font-size: 4rem;
+}
+
+.input-group-text {
+    font-size: 1rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

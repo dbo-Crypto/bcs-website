@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <script src="scripts/HTML-include.js"></script>
+    <script src="scripts/contact-form.js"></script>
+    <div include-html="header.html"></div> 
+</head>
+<body>
+    <div include-html="static-body.html"></div> 
+    <div class="contactForm">
+        <form id="contactForm">
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">Adresse Email</span>
+                <input type="text" class="form-control" id="mail" name="mail" aria-describedby="inputGroupPrepend" placeholder="Adresse email..."required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">Sujet</span>
+                <input type="text" class="form-control" id="sujet" name="sujet" aria-describedby="inputGroupPrepend" placeholder="Titre du message..."required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="message">Message</span>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="10" placeholder="Entrez votre message..."></textarea>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            <button type="submit" class="btn btn-primary" id="contact-btn">Envoyer</button>
+        </form>
+    </div>
+    <div id="alert" style="color: red"></div>
+  
+        <div include-html="footer.html"></div> 
+</body>
+<script>includeHTML();</script>
+</html>
