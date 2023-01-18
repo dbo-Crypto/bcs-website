@@ -3,12 +3,17 @@
 <html lang="fr">
   
 <head>
+  <style>
+    html {
+      visibility: hidden;
+    }
+  </style>
     <script src="scripts/HTML-include.js"></script>
     <div include-html="header.html"></div> 
 </head>
 <body>
     <div include-html="static-body.html"></div> 
-    <div class="index-cont">  
+    <div class="index-cont container-fluid">  
       <div id="index-carousel" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -35,13 +40,13 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="index-text-cont">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non magna elementum libero 
-          pellentesque pellentesque eu ornare nibh. Donec varius felis libero, sit amet tincidunt mi 
-          faucibus et. Nulla et gravida ligula. In vitae diam vitae nibh volutpat tristique. 
-          Praesent dictum nisi in ante tincidunt rhoncus. 
-          Vivamus a ultrices orci. Aliquam sed neque ut mauris accumsan porttitor sed eu urna.</p>
-        </div>
+      </div>
+      <div class="index-text-cont container-fluid">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non magna elementum libero 
+        pellentesque pellentesque eu ornare nibh. Donec varius felis libero, sit amet tincidunt mi 
+        faucibus et. Nulla et gravida ligula. In vitae diam vitae nibh volutpat tristique. 
+        Praesent dictum nisi in ante tincidunt rhoncus. 
+        Vivamus a ultrices orci. Aliquam sed neque ut mauris accumsan porttitor sed eu urna.</p>
       </div>
       <div include-html="footer.html"></div> 
 </body>
