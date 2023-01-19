@@ -238,7 +238,10 @@ body {
         padding: 1.5rem;
         border-color: rgb(235, 236, 236);
     }
+    .input-group{
+        margin-bottom: 1.5rem;
     }
+}
 
 @media (max-width: 599px) {
     .contactForm {
@@ -259,7 +262,10 @@ body {
     #contact-btn{
         font-size: 1rem;
     }
+    .input-group{
+        margin-bottom: 1.5rem;
     }
+}
 
 .input-group-text:after{
     content:" *";
