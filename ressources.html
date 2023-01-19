@@ -5,9 +5,9 @@
 <head>
     <style>
         html {
-          visibility: hidden;
+            visibility: hidden;
         }
-      </style>
+    </style>
     <script src="scripts/HTML-include.js"></script>
     <div include-html="header.html"></div>
 </head>
@@ -15,27 +15,24 @@
 <body>
     <div include-html="static-body.html"></div>
     <div class="container-fluid ressource-cont">
-        <div class="input-group has-validation">
-            <div class="ressources-download-img">
-                <a onclick="window.open('http://www.ffbb.com/sites/default/files/demande_de_licence_2022-2023.pdf?lkm')">
-                    <p class="telecharger-elem">Document de licences</p>
+
+        <div class="ressources-download">
+            <a class="ressource-link"
+                onclick="window.open('http://www.ffbb.com/sites/default/files/demande_de_licence_2022-2023.pdf?lkm')">
+                <p class="telecharger-elem">Document de licences</p>
             </a>
-            </div>
         </div>
-        <div class="input-group has-validation">
-            <div class="ressources-download-img">
-                <a onclick="window.open('http://www.ffbb.com/sites/default/files/demande_de_licence_2022-2023.pdf?lkm')">
-                    <p class="telecharger-elem">Certificat Médical</p>
+        <div class="ressources-download">
+            <a class="ressource-link"
+                onclick="window.open('http://www.ffbb.com/sites/default/files/2022-2023_cm_-_vfin.pdf')">
+                <p class="telecharger-elem">Certificat Médical</p>
             </a>
-            </div>
         </div>
-        <div class="input-group has-validation">
-            <div class="ressources-download-img">
-                <a onclick="window.open('http://www.ffbb.com/sites/default/files/demande_de_licence_2022-2023.pdf?lkm')">
-                    <p class="telecharger-elem">Réglement</p>
+        <div class="ressources-download">
+            <a class="ressource-link"
+                onclick="window.open('http://www.ffbb.com/sites/default/files/otm_regelement_jeu/1a._reglement_officiel_du_basketball_2022_-_version_francaise_-_bvr_-2023-01-12.pdf')">
+                <p class="telecharger-elem">Réglement</p>
             </a>
-            </div>
-        </div>
         </div>
     </div>
     <div include-html="footer.html"></div>
@@ -45,10 +42,3 @@
 
 </html>
 
-
-<!--
-<a class="img-telecharger" onclick="window.open('http://www.ffbb.com/sites/default/files/2022-2023_cm_-_vfin.pdf')">
-    <a class="img-telecharger" onclick="window.open('http://www.ffbb.com/sites/default/files/otm_regelement_jeu/1a._reglement_officiel_du_basketball_2022_-_version_francaise_-_bvr_-2023-01-12.pdf')">
-
-
--->

@@ -1,17 +1,32 @@
 /* Common style */
-#header {
+.header {
   background-color: #0E2CA9;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-#title {
-  color: white;
-  font-size: 3rem;
-  margin: auto;
-  text-align: center;
+@media (min-width: 600px) {
+  #title {
+    color: white;
+    font-size: 3.5rem;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 }
-
+@media (max-width: 599px) {
+  #title {
+    color: white;
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header-logo-cont {
+    width: 70%;
+    margin: auto;
+  }
+}
 #logo {
   width: 10rem;
 }
@@ -38,11 +53,12 @@
 
 .navbar-nav {
   margin: auto;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
+  font-family: monaco;
 }
 
 .navbar-cont {
-  background-color: #EDEFF1;
+  background-color: #f0f0f0;
   margin-bottom: 2rem;
 }
 
@@ -65,42 +81,73 @@ body {
   margin: auto;
   border-style: solid;
   border-color: rgb(229, 224, 224);
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-#footer {
-  display: flex;
-  padding: 1rem;
-  background-color: #D9DBDD;
+@media (max-width: 599px) {
+  .footer-img {
+    width: 80%;
+  }
+  .footer {
+    display: flex;
+    padding: 1rem;
+    background-color: #f0f0f0;
+  }
+  .footer-img-cont {
+    display: flex;
+    margin: auto;
+    margin: auto;
+    text-align: center;
+  }
+  .footer-links {
+    margin: auto;
+  }
 }
-
-.footer {
-  margin-top: 2rem;
+@media (min-width: 600px) {
+  .footer {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: #f0f0f0;
+  }
+  .footer-img-cont {
+    margin: auto;
+    display: flex;
+    text-align: center;
+  }
+  .footer-links {
+    margin: auto;
+  }
 }
-
-.footer-img-cont {
-  display: flex;
-  margin: auto;
-}
-
 /* Index page style */
-.index-cont {
-  display: flex;
-  margin-top: 2rem;
+@media (max-width: 599px) {
+  .index-cont {
+    flex-direction: column;
+    margin: auto;
+  }
+  .index-text-cont {
+    margin-top: 2rem;
+    text-align: justify;
+  }
 }
-
-#index-carousel {
-  width: 50%;
-  margin-right: 1rem;
+@media (min-width: 600px) {
+  .index-cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #index-carousel {
+    width: 48%;
+    margin: auto;
+  }
+  .index-text-cont {
+    width: 48%;
+    text-align: justify;
+    margin: auto;
+  }
 }
-
-.index-text-cont {
-  width: 50%;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  text-align: justify;
-}
-
-/* Equipe page style */
+/* Equipes page style */
 #equipes-accordion {
   width: 90%;
   margin: auto;
@@ -112,41 +159,113 @@ body {
   flex-wrap: wrap;
 }
 
-.accordion-button {
-  font-size: 1.5rem;
+@media (min-width: 600px) {
+  .accordion-button {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .accordion-header {
+    width: 100%;
+  }
+  .accordion-body {
+    display: flex;
+  }
+  .equipe-accordion-img-cont {
+    width: 50%;
+    text-align: center;
+  }
+  .equipe-accordion-text-cont {
+    width: 50%;
+    margin: auto;
+  }
+  .equipe-accordion-text-cont {
+    text-align: justify;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 599px) {
+  .accordion-button {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  .accordion-header {
+    width: 100%;
+  }
+  .accordion-body {
+    flex-direction: column;
+  }
+  .equipe-accordion-img-cont {
+    width: 100%;
+    text-align: center;
+  }
+  .equipe-accordion-text-cont {
+    text-align: justify;
+    margin-top: 1rem;
+  }
+}
+/* Encarants page style*/
+#encadrants {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.accordion-body {
-  margin-right: 1rem;
+@media (min-width: 600px) {
+  .card-img-top {
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
-
-.equipe-accordion-text-cont {
-  text-align: justify;
-  margin-left: 1rem;
+@media (max-width: 599px) {
+  .card-img-top {
+    width: 80%;
+    margin-top: 1rem;
+  }
 }
-
 /* Contact page style */
-.contactForm {
-  width: 60%;
-  margin: auto;
-  display: block;
-  border-style: ridge;
-  padding: 1.5rem;
-  border-color: rgb(235, 236, 236);
+@media (min-width: 600px) {
+  .contactForm {
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-style: ridge;
+    padding: 1.5rem;
+    border-color: rgb(235, 236, 236);
+  }
 }
-
-.input-group {
-  margin-bottom: 2rem;
-  display: flex;
+@media (max-width: 599px) {
+  .contactForm {
+    width: 100%;
+    margin: auto;
+    display: block;
+    border-style: ridge;
+    padding: 1.5rem;
+    font-size: 1rem;
+    border-color: rgb(235, 236, 236);
+  }
+  .input-group-text {
+    font-size: 0.7rem;
+  }
+  .form-control {
+    font-size: 0.7rem;
+  }
+  #contact-btn {
+    font-size: 1rem;
+  }
+}
+.input-group-text:after {
+  content: " *";
+  color: red;
 }
 
 .btn {
   margin-top: 1rem;
 }
 
+/* Style histoire page */
 .container-histoire {
   margin: auto;
-  display: block;
   width: 70%;
 }
 
@@ -167,26 +286,6 @@ body {
   display: inline-block;
   margin-top: 3rem;
   margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-#encadrants {
-  text-align: center;
-}
-
-.telecharger {
-  size-adjust: 3rem;
-  margin: auto;
-}
-
-.telecharger-elem {
-  font-size: 2rem;
-  margin: auto;
-  background-color: rgb(222, 219, 219);
-  text-align: center;
-}
-
-.img-telecharger {
   margin-right: 2rem;
 }
 
@@ -237,15 +336,46 @@ body {
   margin-top: 2rem;
 }
 
-.ressource-cont {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
+/* Style for ressources page */
+@media (min-width: 600px) {
+  .ressource-cont {
+    margin: auto;
+  }
+  .ressources-download {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .telecharger-elem {
+    font-size: 2rem;
+    margin: auto;
+    background-color: rgb(242, 238, 238);
+    text-align: center;
+  }
+}
+@media (max-width: 599px) {
+  .ressource-cont {
+    flex-direction: column;
+    margin: auto;
+  }
+  .ressources-download {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .telecharger-elem {
+    font-size: 1.5rem;
+    margin: auto;
+    background-color: rgb(242, 238, 238);
+    text-align: center;
+  }
+}
+.telecharger-elem:hover {
+  cursor: pointer;
 }
 
-.ressources-download-img {
-  width: 50%;
-  margin: auto;
+.ressource-link {
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

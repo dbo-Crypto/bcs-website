@@ -4,14 +4,18 @@ function getContactFormData() {
   let message = document.getElementById("message").value;
   
 
-  Email.send({
-    SecureToken: "5021fe60-2829-47a0-b75d-416ef87dee88",
-    To: "contact.1e43r@simplelogin.com",
-    From: "contact.1e43r@simplelogin.com",
-    Subject: "BCS Demande de contact",
-    Body: "<html><h2 text-align=center>Demande de contact</h><h4>Demandeur: "+mail+"</h4><br><strong>Sujet: "+ sujet +"</strong><br><p>Message:</p><p>"+ message +"</p></html>",
-  }).then((message) => alert("Votre message a bien été envoyé."));
-
+  if (mail == "" || sujet == "" || message == ""){
+    console.log("Empty fields")
+  } else {
+    Email.send({
+      SecureToken: "5021fe60-2829-47a0-b75d-416ef87dee88",
+      To: "contact.1e43r@simplelogin.com",
+      From: "contact.1e43r@simplelogin.com",
+      Subject: "BCS Demande de contact",
+      Body: "<html><h2 text-align=center>Demande de contact</h><h4>Demandeur: "+mail+"</h4><br><strong>Sujet: "+ sujet +"</strong><br><p>Message:</p><p>"+ message +"</p></html>",
+    })
+    alert("Votre message a été envoyé")
+  }
 }
 
 /*
