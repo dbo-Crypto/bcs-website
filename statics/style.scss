@@ -62,12 +62,13 @@
 }
 
 .nav-item {
-    margin-right: 3rem;
+    margin-right: 2rem;
 }
 
 .nav-item:hover {
-    margin-right: 3rem;
+    margin-right: 2rem;
     background-color: rgb(183, 183, 183);
+    border-radius: 20px;
 }
 
 /* General body style */
@@ -241,6 +242,10 @@ body {
     .input-group{
         margin-bottom: 1.5rem;
     }
+    #contact-btn{
+        font-size: 1.5rem;
+        border-radius: 30px;
+    }
 }
 
 @media (max-width: 599px) {
@@ -302,8 +307,21 @@ body {
     margin-top: 3rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    border-radius: 40px;
 }
 
+#card-tel-num{
+   margin-top: 0.5rem;
+   text-align: left;
+   margin-left: 1rem;
+}
+.card-info{
+    display: flex;
+}
+.card-text{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
 
 
 .calendrier-row {
@@ -371,6 +389,8 @@ body {
         margin: auto;
         background-color: rgb(242, 238, 238);
         text-align: center;
+        border-radius: 20px;
+        padding: 1.2rem;
         }
     }
 
@@ -389,6 +409,8 @@ body {
         margin: auto;
         background-color: rgb(242, 238, 238);
         text-align: center;
+        border-radius: 20px;
+        padding: 1rem;
         }
     }
 .telecharger-elem:hover{
@@ -398,4 +420,58 @@ body {
     text-decoration: none;
     color: black;
 }
+
+
+/* Style Planning page */
+
+.planning-cont{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.planning-title-text{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.planning-calendar-img{
+    width: 50%;
+}
+.planning-calendar-cont{
+    text-align: center;
+}
+.planning-location-text{
+    font-size: 2rem;
+}
+
+.planning-location-map:hover{
+    cursor: pointer;
+}
+.locations-cont{
+    margin-top: 2rem;
+}
+.planning-location-address{
+    font-size: 2rem;
+}
+.equipe-accordion-img-cont{
+    margin: auto;
+}
+
+
+@media (min-width: 600px) {
+ 
+    }
+
+@media (max-width: 599px) {
+    .planning-location-address{
+        font-size: 1rem;
+    }
+    .planning-title-text{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .planning-calendar-img{
+        width: 80%;
+    }
+    }
 /*# sourceMappingURL=style.css.map */
