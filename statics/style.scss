@@ -166,7 +166,6 @@ body {
     .accordion-button{
         font-size: 1.3rem;
         width: 100%;
-        display: block;
     }
     .accordion-header{
         width: 100%;
@@ -191,7 +190,6 @@ body {
 @media (max-width: 599px) {
     .accordion-button{
         font-size: 1rem;
-        display: block;
         width: 100%;
     }
     .accordion-header{
