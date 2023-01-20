@@ -152,7 +152,8 @@ body {
 /* Equipes page style */
 #equipes-accordion{
     width: 90%;
-    border-style: ridge;
+    border-style: solid;
+    border-color: rgb(229, 224, 224);
 }
 
 .accordion-item{
@@ -233,7 +234,7 @@ body {
         width: 60%;
         margin: auto;
         display: block;
-        border-style: ridge;
+        border-style: solid;
         padding: 1.5rem;
         border-color: rgb(235, 236, 236);
     }
@@ -251,7 +252,7 @@ body {
         width: 100%;
         margin: auto;
         display: block;
-        border-style: ridge;
+        border-style: solid;
         padding: 1.5rem;
         font-size: 1rem;
         border-color: rgb(235, 236, 236);
