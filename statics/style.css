@@ -1,6 +1,6 @@
 /* Common style */
 .header {
-  background-color: #0E2CA9;
+  background-color: #162ba2;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -69,7 +69,7 @@
 .nav-item:hover {
   margin-right: 2rem;
   background-color: rgb(183, 183, 183);
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 /* General body style */
@@ -164,9 +164,11 @@ body {
   .accordion-button {
     font-size: 1.3rem;
     width: 100%;
+    display: block;
   }
   .accordion-header {
     width: 100%;
+    margin: auto;
   }
   .accordion-body {
     display: flex;
@@ -187,7 +189,7 @@ body {
 @media (max-width: 599px) {
   .accordion-button {
     font-size: 1rem;
-    text-align: center;
+    display: block;
     width: 100%;
   }
   .accordion-header {
