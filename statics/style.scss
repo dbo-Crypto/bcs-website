@@ -152,11 +152,8 @@ body {
 /* Equipes page style */
 #equipes-accordion{
     width: 90%;
-    margin: auto;
     border-style: ridge;
 }
-
-
 
 .accordion-item{
     display: flex;
@@ -166,10 +163,10 @@ body {
     .accordion-button{
         font-size: 1.3rem;
         width: 100%;
+        display: block;
     }
     .accordion-header{
         width: 100%;
-        margin: auto;
     }
     .accordion-body{
         display: flex;
@@ -190,6 +187,7 @@ body {
 @media (max-width: 599px) {
     .accordion-button{
         font-size: 1rem;
+        text-align: center;
         width: 100%;
     }
     .accordion-header{
@@ -321,49 +319,6 @@ body {
 .card-text{
     font-weight: bold;
     font-size: 1.3rem;
-}
-
-
-.calendrier-row {
-    display: flex;
-    flex-wrap: wrap;
-    border-style: solid;
-    margin: 2rem;
-    width: 40%;
-}
-
-#score {
-    display: inline-flex;
-}
-
-.team-name {
-    text-align: center;
-    font-size: 2rem;
-    width: 100%;
-}
-
-#calendrier {
-    width: 100%;
-}
-
-.score {
-    margin: auto;
-}
-
-.calendar {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-}
-
-.score-card {
-    margin-top: 2rem;
-    border-style: ridge;
-    display: flex;
-}
-
-#score {
-    font-size: 4rem;
 }
 
 .btn {
