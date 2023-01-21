@@ -59,7 +59,7 @@
 
 .navbar-cont {
   background-color: #f0f0f0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .nav-item {
@@ -79,12 +79,12 @@ html {
 }
 
 body {
-  width: 90%;
+  width: 99.5%;
   margin: auto;
   border-style: solid;
   border-color: rgb(229, 224, 224);
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 0.1%;
+  margin-top: 0.1%;
 }
 
 @media (max-width: 599px) {
@@ -95,10 +95,10 @@ body {
     display: flex;
     padding: 1rem;
     background-color: #f0f0f0;
+    margin-top: 1rem;
   }
   .footer-img-cont {
     display: flex;
-    margin: auto;
     margin: auto;
     text-align: center;
   }
@@ -142,6 +142,14 @@ body {
 }
 
 /* Index page style */
+.carousel-caption {
+  color: black;
+}
+
+.carousel-caption-custom {
+  background: rgba(240, 240, 240, 0.5);
+}
+
 @media (max-width: 599px) {
   .index-cont {
     flex-direction: column;
@@ -194,7 +202,7 @@ body {
 #index_scroller {
   overflow: scroll;
   scroll-behavior: smooth;
-  height: 425px;
+  height: 475px;
   width: 100%;
   border: 5px solid rgb(235, 236, 236);
 }
@@ -215,6 +223,7 @@ body {
   width: 90%;
   border-style: solid;
   border-color: rgb(229, 224, 224);
+  margin-bottom: 3.4rem;
 }
 
 .accordion-item {
@@ -231,18 +240,20 @@ body {
   .accordion-header {
     width: 100%;
   }
-  .accordion-body {
+  .equipes-accordion-body {
     display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
-  .equipe-accordion-img-cont {
+  .equipes-accordion-img-cont {
     width: 50%;
     text-align: center;
   }
-  .equipe-accordion-text-cont {
+  .equipes-accordion-text-cont {
     width: 50%;
     margin: auto;
   }
-  .equipe-accordion-text-cont {
+  .equipes-accordion-text-cont {
     text-align: justify;
     margin-left: 1rem;
   }
@@ -256,14 +267,16 @@ body {
   .accordion-header {
     width: 100%;
   }
-  .accordion-body {
+  .equipes-accordion-body {
     flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
-  .equipe-accordion-img-cont {
+  .equipes-accordion-img-cont {
     width: 100%;
     text-align: center;
   }
-  .equipe-accordion-text-cont {
+  .equipes-accordion-text-cont {
     text-align: justify;
     margin-top: 1rem;
   }
@@ -325,7 +338,7 @@ body {
     font-size: 1rem;
   }
   .input-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 .input-group-text:after {
@@ -338,23 +351,38 @@ body {
 }
 
 /* Style histoire page */
-.container-histoire {
-  margin: auto;
-  width: 70%;
+@media (max-width: 599px) {
+  .container-histoire {
+    margin: auto;
+    width: 85%;
+  }
+  .histoire-p {
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .histoire-h {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
 }
-
-.histoire-p {
-  text-align: justify;
-  font-size: 2vh;
+@media (min-width: 600px) {
+  .container-histoire {
+    margin: auto;
+    width: 70%;
+  }
+  .histoire-p {
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+  .histoire-h {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
 }
-
-.histoire-h {
-  text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  font-size: 4vh;
-}
-
 .card {
   width: 18rem;
   display: inline-block;
@@ -390,17 +418,26 @@ body {
     margin: auto;
   }
   .ressources-download {
-    width: 50%;
-    margin: auto;
-    margin-bottom: 2rem;
-  }
-  .telecharger-elem {
-    font-size: 2rem;
-    margin: auto;
-    background-color: rgb(242, 238, 238);
+    width: 100%;
+    margin-bottom: 1rem;
     text-align: center;
+  }
+  #ressources-btn {
+    font-size: 1.5rem;
+    padding: 1rem;
     border-radius: 20px;
-    padding: 1.2rem;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgb(242, 238, 238);
+    width: 40%;
+    margin: auto;
+  }
+  #ressources-btn:hover {
+    padding: 1rem;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: black;
+    background-color: rgb(242, 238, 238);
   }
 }
 @media (max-width: 599px) {
@@ -410,27 +447,24 @@ body {
   }
   .ressources-download {
     margin: auto;
-    margin-bottom: 2rem;
   }
-  .telecharger-elem {
-    font-size: 1.5rem;
-    margin: auto;
-    background-color: rgb(242, 238, 238);
-    text-align: center;
-    border-radius: 20px;
+  #ressources-btn {
+    font-size: 1rem;
     padding: 1rem;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgb(242, 238, 238);
+    width: 100%;
   }
 }
-.telecharger-elem:hover {
-  cursor: pointer;
-}
-
-.ressource-link {
-  text-decoration: none;
-  color: black;
-}
-
 /* Style Planning page */
+#planning-accordion {
+  width: 90%;
+  border-style: solid;
+  border-color: rgb(229, 224, 224);
+}
+
 .planning-cont {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -450,8 +484,13 @@ body {
   text-align: center;
 }
 
-.planning-location-text {
-  font-size: 2rem;
+.planning-accordion-text-cont {
+  margin: auto;
+  text-align: center;
+}
+
+.planning-accordion-img-cont {
+  width: 60%;
 }
 
 .planning-location-map:hover {
@@ -464,12 +503,16 @@ body {
 
 .planning-location-address {
   font-size: 2rem;
+  width: 100%;
 }
 
-.equipe-accordion-img-cont {
-  margin: auto;
+@media (min-width: 600px) {
+  .planning-accordion-body {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+  }
 }
-
 @media (max-width: 599px) {
   .planning-location-address {
     font-size: 1rem;
@@ -481,6 +524,19 @@ body {
   }
   .planning-calendar-img {
     width: 80%;
+  }
+  .planning-accordion-text-cont {
+    margin: auto;
+    text-align: center;
+  }
+  .planning-accordion-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .planning-accordion-img-cont {
+    width: 100%;
   }
 }
 /* Style Mentions page */
@@ -516,7 +572,7 @@ body {
     margin-top: 2rem;
   }
   #mentions-btn {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .mentions-btn {
     text-align: center;
