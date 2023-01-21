@@ -97,7 +97,9 @@ body {
   }
   .footer {
     display: flex;
+    flex-wrap: wrap;
     padding: 1rem;
+    padding: 0.8rem;
     background-color: #f0f0f0;
     margin-top: 1rem;
     position: fixed;
@@ -119,6 +121,7 @@ body {
     padding: 0.1rem;
     position: fixed;
     bottom: 0px;
+    width: 100%;
     box-sizing: border-box;
   }
 }
@@ -126,7 +129,6 @@ body {
   .footer {
     margin-top: 2rem;
     display: flex;
-    flex-wrap: wrap;
     padding: 0.8rem;
     background-color: #f0f0f0;
     position: fixed;
