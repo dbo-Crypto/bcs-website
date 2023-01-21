@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-  padding-bottom: 180px;
+  padding-bottom: 140px;
 }
 
 @media (min-width: 600px) {
@@ -85,8 +85,6 @@ html {
 body {
   width: 99.5%;
   margin: auto;
-  border-style: solid;
-  border-color: rgb(229, 224, 224);
   margin-bottom: 0.1%;
   margin-top: 0.1%;
 }
