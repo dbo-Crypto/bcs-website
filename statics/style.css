@@ -75,6 +75,7 @@
 /* General body style */
 html {
   visibility: visible !important;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -150,6 +151,18 @@ body {
     margin-top: 2rem;
     text-align: justify;
   }
+  .index-news-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .index-news-text {
+    font-size: 0.8rem;
+  }
+  .index-news-date {
+    font-size: 0.55rem;
+    margin-top: -2em;
+    font-style: italic;
+  }
 }
 @media (min-width: 600px) {
   .index-cont {
@@ -165,7 +178,38 @@ body {
     text-align: justify;
     margin: auto;
   }
+  .index-news-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .index-news-text {
+    font-size: 0.85rem;
+  }
+  .index-news-date {
+    font-size: 0.6rem;
+    margin-top: -2em;
+    font-style: italic;
+  }
 }
+#index_scroller {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  height: 425px;
+  width: 100%;
+  border: 5px solid rgb(235, 236, 236);
+}
+
+.index-news-divider {
+  border-top: 5px solid black;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+}
+
+.news-item {
+  margin: 1rem;
+}
+
 /* Equipes page style */
 #equipes-accordion {
   width: 90%;
