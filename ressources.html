@@ -1,46 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="fr">
-
-<head>
+  <head>
     <style>
-        html {
-            visibility: hidden;
-        }
+      html {
+        visibility: hidden;
+      }
     </style>
     <script src="scripts/HTML-include.js"></script>
     <div include-html="header.html"></div>
-</head>
+  </head>
 
-<body>
+  <body>
     <div include-html="static-body.html"></div>
     <div class="wrapper">
-    <div class="container-fluid ressource-cont">
-
+      <div class="container-fluid ressource-cont">
         <div class="ressources-download">
-            <a class="ressource-link"
-                onclick="window.open('http://www.ffbb.com/sites/default/files/demande_de_licence_2022-2023.pdf?lkm')">
-                <button type="button" id="ressources-btn" class="btn btn-light">Documents de Licence</button>
-            </a>
+          <a
+            class="ressource-link"
+            onclick="window.open('http://www.ffbb.com/sites/default/files/demande_de_licence_2022-2023.pdf?lkm')"
+          >
+            <button type="button" id="ressources-btn" class="btn btn-light">
+              Documents de Licence
+            </button>
+          </a>
         </div>
         <div class="ressources-download">
-            <a class="ressource-link"
-                onclick="window.open('http://www.ffbb.com/sites/default/files/2022-2023_cm_-_vfin.pdf')">
-                <button type="button" id="ressources-btn" class="btn btn-light">Certificat Médical</button>
-            </a>
+          <a
+            class="ressource-link"
+            onclick="window.open('http://www.ffbb.com/sites/default/files/2022-2023_cm_-_vfin.pdf')"
+          >
+            <button type="button" id="ressources-btn" class="btn btn-light">
+              Certificat Médical
+            </button>
+          </a>
         </div>
         <div class="ressources-download">
-            <a class="ressource-link"
-                onclick="window.open('http://www.ffbb.com/sites/default/files/otm_regelement_jeu/1a._reglement_officiel_du_basketball_2022_-_version_francaise_-_bvr_-2023-01-12.pdf')">
-                <button type="button" id="ressources-btn" class="btn btn-light">Réglement</button>
-            </a>
+          <a
+            class="ressource-link"
+            onclick="window.open('http://www.ffbb.com/sites/default/files/otm_regelement_jeu/1a._reglement_officiel_du_basketball_2022_-_version_francaise_-_bvr_-2023-01-12.pdf')"
+          >
+            <button type="button" id="ressources-btn" class="btn btn-light">
+              Réglement
+            </button>
+          </a>
         </div>
+      </div>
+      <div include-html="footer.html"></div>
     </div>
-    <div include-html="footer.html"></div>
-    </div>
-</body>
-<script>includeHTML();</script>
-<script src="statics/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  </body>
+  <script>
+    includeHTML();
+  </script>
+  <script src="statics/bootstrap/js/bootstrap.bundle.min.js"></script>
 </html>
-

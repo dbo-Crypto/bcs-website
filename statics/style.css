@@ -1,4 +1,7 @@
-/* Common style */
+@charset "UTF-8";
+/*##############################################
+ Common style to all pages
+ ##############################################*/
 .header {
   background-color: #162ba2;
   padding-top: 0.5rem;
@@ -76,17 +79,12 @@
   border-radius: 15px;
 }
 
-/* General body style */
+/*##############################################
+ General body style
+ ##############################################*/
 html {
   visibility: visible !important;
   scroll-behavior: smooth;
-}
-
-body {
-  width: 99.5%;
-  margin: auto;
-  margin-bottom: 0.1%;
-  margin-top: 0.1%;
 }
 
 @media (max-width: 599px) {
@@ -96,12 +94,11 @@ body {
   .footer {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
-    padding: 0.8rem;
+    padding: 0.6rem;
     background-color: #f0f0f0;
     margin-top: 1rem;
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     box-sizing: border-box;
   }
   .footer-img-cont {
@@ -127,16 +124,19 @@ body {
   .footer {
     margin-top: 2rem;
     display: flex;
-    padding: 0.8rem;
+    padding: 0.5rem;
     background-color: #f0f0f0;
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     box-sizing: border-box;
   }
   .footer-img-cont {
     margin: auto;
     display: flex;
     text-align: center;
+  }
+  .footer-img {
+    width: 80%;
   }
   .footer-links {
     margin: auto;
@@ -157,7 +157,9 @@ body {
   color: black;
 }
 
-/* Index page style */
+/*##############################################
+ Index page style
+ ##############################################*/
 .carousel-caption {
   color: black;
 }
@@ -234,7 +236,9 @@ body {
   margin: 1rem;
 }
 
-/* Equipes page style */
+/*##############################################
+ Equipes page style
+ ##############################################*/
 #equipes-accordion {
   width: 90%;
   border-style: solid;
@@ -297,7 +301,9 @@ body {
     margin-top: 1rem;
   }
 }
-/* Encarants page style*/
+/*##############################################
+ Encadrants page style
+ ##############################################*/
 #encadrants {
   text-align: center;
   margin-bottom: 1rem;
@@ -316,7 +322,33 @@ body {
     margin-top: 1rem;
   }
 }
-/* Contact page style */
+.card {
+  width: 18rem;
+  display: inline-block;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 40px;
+}
+
+#card-tel-num {
+  margin-top: 0.5rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.card-info {
+  display: flex;
+}
+
+.card-text {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/*##############################################
+ Contacts page style
+ ##############################################*/
 @media (min-width: 600px) {
   .contactForm {
     width: 60%;
@@ -363,10 +395,13 @@ body {
 }
 
 .btn {
-  margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }
 
-/* Style histoire page */
+/*##############################################
+ Histoire page style
+ ##############################################*/
 @media (max-width: 599px) {
   .container-histoire {
     margin: auto;
@@ -399,36 +434,9 @@ body {
     font-size: 3rem;
   }
 }
-.card {
-  width: 18rem;
-  display: inline-block;
-  margin-top: 3rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  border-radius: 40px;
-}
-
-#card-tel-num {
-  margin-top: 0.5rem;
-  text-align: left;
-  margin-left: 1rem;
-}
-
-.card-info {
-  display: flex;
-}
-
-.card-text {
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
-.btn {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-}
-
-/* Style for ressources page */
+/*##############################################
+ Ressources page style
+ ##############################################*/
 @media (min-width: 600px) {
   .ressource-cont {
     margin: auto;
@@ -474,7 +482,9 @@ body {
     width: 100%;
   }
 }
-/* Style Planning page */
+/*##############################################
+ Planning page style
+ ##############################################*/
 #planning-accordion {
   width: 90%;
   border-style: solid;
@@ -555,7 +565,9 @@ body {
     width: 100%;
   }
 }
-/* Style Mentions page */
+/*##############################################
+ Mentions Légales page style
+ ##############################################*/
 .mentions-cont {
   width: 90%;
   margin: auto;
