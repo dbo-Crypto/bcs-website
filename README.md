@@ -1,8 +1,13 @@
-Author : DBO
+# Website for Basketball club
+#### Video Demo:  https://youtu.be/Mx6YcagKR58
+#### Description:
+To give visibility to my old BasketBall club, where I've spend my youth, I've decided to build a website using HTML, CSS and JavaScript.
 
-This project aims to validate my CS50x classe (final project) and give visibility to
-BCS (Bsket Club Sedanais).
+The website is hosted on GitHub as I did not buy yet the domain name.
 
-This sport association doesn't have a sebsite and it was a good opportinity to help the club where I've spent my youth.
+The website still has the template / placeholder for image and text because I did not yet get all the authorizations to put real informations and photos online. It should come soon.
 
-The site use HTML, CSS and JavaScript only.
+For the mail sent via the contact form, I'm using MailTrap and EmailAPI.
+
+I've really enjoyed this class, you guys are awesome!!
+Thanks a lot and see you at the next class :)
